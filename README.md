@@ -118,6 +118,18 @@ Once installed, the app opens in its own window and all of its files are cached,
 
 
 
+## 🐳 Running with Docker
+
+A prebuilt image for `linux/amd64` and `linux/arm64` (e.g. Raspberry Pi) is published to the GitHub Container Registry:
+
+```bash
+docker run -d --name volcano-app -p 8080:80 --restart unless-stopped ghcr.io/mkolakowski/reactive-volcano-app:latest
+```
+
+Then open `http://localhost:8080`. Or use `docker compose up -d` with the included `docker-compose.yml`, or the Podman Quadlet file `volcano-app.container`.
+
+Web Bluetooth only works on `localhost` or over HTTPS, so when opening the app from another device, put it behind an HTTPS reverse proxy (or allow the origin in Chrome's insecure-origins flag, see below).
+
 ## 🛠️ Development and Build
 
 <details>

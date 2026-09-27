@@ -1,4 +1,6 @@
-FROM node:22-alpine AS build
+# The build output is static files, so build once on the runner's native
+# platform instead of under emulation for every target architecture
+FROM --platform=$BUILDPLATFORM node:22-alpine AS build
 
 WORKDIR /app
 

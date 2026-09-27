@@ -98,15 +98,21 @@ The user interface is responsive and designed to work well on both desktop and m
 
 Progressive Web Apps can be installed on your device like native apps.
 
+### On Desktop (Chrome / Edge):
+1. Open the app in the browser.
+2. Click the install icon in the address bar (or menu → "Install Reactive Volcano App").
+
 ### On Android:
 1. Open the PWA in your browser (Chrome, Firefox, etc.).
 2. Tap on the browser's menu (usually three dots in the top right corner).
-3. Tap on "Add to Home screen".
+3. Tap on "Install app" / "Add to Home screen".
 
 ### On iOS:
 1. Open the PWA in Safari.
 2. Tap the Share button (the box with an arrow pointing upwards).
 3. Scroll down and tap "Add to Home Screen".
+
+Once installed, the app opens in its own window and all of its files are cached, so it starts even without an internet connection. New versions are downloaded in the background and applied the next time the app is opened, so an active Bluetooth connection is never interrupted by an update.
 
 </details>
 
